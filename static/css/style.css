@@ -16,8 +16,8 @@ body {
 
 .homeheading {
   text-align: center;
-  background-color: #f9cf00;
-  padding: 5px;
+  background-color: #D45FA3;
+  padding: 0;
 }
 
 #homeHeader {
@@ -48,7 +48,7 @@ body {
 
 .darkGray {
   color: white;
-  background-color: #726B68;
+  background-color: #777777;
   padding: 20px;
   font-weight: bold;
   margin: 5px 0;
@@ -65,7 +65,7 @@ body {
 
 .gray {
   color: black;
-  background-color: #C8C8C8;
+  background-color: #BDBDBD;
   padding: 20px;
   font-weight: bold;
   margin: 5px 0;
@@ -74,6 +74,56 @@ body {
 .gray h3, h6 {
   margin: 0;
 }
+
+.information-popup {
+  position: fixed;
+  background-color: rgba(115,57,195,.9);
+  color: white;
+  font-weight: bold;
+  padding: 12% 15px 15px 15px;
+  z-index: 2;
+  width: 80%;
+  top: 20%;
+  left: 10%;
+  border: 3px solid #777777;
+}
+
+.information-popup p {
+  font-size: 1.1em;
+}
+
+.information-button {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #777777;
+}
+
+.glyphicon {
+  float: right;
+  font-size: 2em;
+  font-weight: lighter;
+  color: #A9A9A9
+}
+
+#pst {
+  font-size: .9em;
+}
+
+.eater-38 {
+  background-color: red;
+  text-align: center;
+  color: white;
+  font: bold;
+  margin: 5px 0;
+  padding: 0 0 5px 0;
+}
+
+.eater-38 h3, h6{
+  margin: 0;
+}
+
 
 /*Modal settings on Main Page*/
 .modal.fade.in .modal-body {

@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 var express = require("express");
 var bodyParser = require("body-parser");
 var ejsLayouts = require("express-ejs-layouts");
@@ -49,12 +48,11 @@ app.get('/', function(req, res) {
   res.render('index')
 });
 
-
 app.get('/matrix', function(req, res) {
   yelp.search({ name: 'Il Corvo Pasta', location: 'Seattle' })
   .then(function (data) {
     console.log(data);
-    res.render('site/matrix', {
+    res.render('matrix/matrix', {
       data: data
     });
   })
@@ -67,7 +65,7 @@ app.get('/eater38', function(req, res) {
   yelp.search({ name: 'Il Corvo Pasta', location: 'Seattle' })
   .then(function (data) {
     console.log(data);
-    res.render('site/eater38', {
+    res.render('matrix/eater38', {
       data: data
     });
   })
@@ -75,6 +73,17 @@ app.get('/eater38', function(req, res) {
     console.error(err);
   });
 });
+
+app.get('yelpcall', function(req, res) {
+  yelp.search({name: '', location: 'Seattle' })
+  .then(function(data) {
+    console.log(data);
+    res.send('', {data: data})
+  })
+  .catch(function(err) {
+    console.error(err);
+  })
+})
 
 
 
