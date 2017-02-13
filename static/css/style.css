@@ -85,7 +85,7 @@ body {
   width: 80%;
   top: 20%;
   left: 10%;
-  border: 3px solid #777777;
+  border: 2px solid #777777;
 }
 
 .information-popup p {
@@ -107,7 +107,7 @@ body {
   color: #A9A9A9
 }
 
-#pst {
+#psst {
   font-size: .9em;
 }
 
@@ -122,6 +122,61 @@ body {
 
 .eater-38 h3, h6{
   margin: 0;
+}
+
+.row {
+  padding: 0;
+}
+
+.square {
+  height: 150px;
+  margin: 0;
+}
+
+.square-gray {
+  background-color: #BDBDBD;
+}
+
+.square-darkgray {
+  background-color: #777777;
+}
+
+.protip-footer {
+  background-color: #D560A4;
+  color: white;
+  width: 100%;
+  padding: 5px 6px;
+}
+
+.protip-footer h5 {
+  font-weight: bold;
+}
+
+.bottom-buttons-container {
+  /*background-color: #D560A4;*/
+  /*border: 2px solid #777777;*/
+  margin: 5px 0;
+  /*text-align: center;*/
+}
+
+.bottom-buttons {
+  background-color: #D560A4;
+  width: 49%;
+  border: 2px solid #777777;
+  margin: 0;
+  padding: 8px;
+  color: 	#5B5281;
+  font-weight: bold;
+}
+
+#reshuffle {
+  margin-left: 0;
+  margin-right: .45%;
+}
+
+#save-board {
+  margin-right: 0;
+  margin-left: .45%;
 }
 
 
